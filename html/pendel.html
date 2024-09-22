@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="surf">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/pendel_style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Clock</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html#project">Projects</a></li>
+                    <li><a href="../index.html#about">About me</a></li>
+                    <li><a href="../index.html#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section>
+        <div class="info">
+            <div>
+                <h1>An energy clock</h1>
+                <p><span>Type:</span> Group work</p>
+                <p><span>When:</span> 2022</p>
+                <p><span>Duration:</span> Ten weeks</p>
+                <p><span>Project scope:</span> Bachelor thesis</p>
+                <p>This bachelor's thesis project focused on developing a 
+                    digi-physical product for visualizing household energy consumption. 
+                    The objective was to create a product capable of reducing energy 
+                    consumption while being norm-creative and challenging traditional 
+                    gender roles within households. The project was conducted in collaboration 
+                    with the product design studio Boid. </p>
+            </div>
+            <div class="pendel"><img src="../images/pendel/pendel_final.png"></div>
+        </div>
+
+
+        <div class="step_1">
+            <div class="mood"><img src="../images/pendel/mood_kandidat.png"></div>
+            <div>
+                <h2>Norm-creative</h2>
+                <p>The project included creating a gender-inclusive solution, requiring detailed 
+                    exploration to pinpoint the essential factors for crafting such a design, 
+                    particularly considering the influence of societal gender stereotypes in design. 
+                    A mood board was made to help envision the desired expression.  </p>
+            </div>
+        </div>
+        <div class="background">
+            <div class="sketch">
+                <h2>The process</h2>
+                <p>One concept that emerged during the project was POWER, an energy clock. 
+                    The screensaver represents an analog clock that becomes a natural part of the interior design. </p>
+            </div>
+            <div class="step_2">
+                <div class="pendel1">
+                    <img src="../images/pendel/pendel1.png">
+                    <div class="arrow arrow1"></div> <!-- Arrow for pendel1 -->
+                </div>
+                <div class="pendel2">
+                    <img src="../images/pendel/pendel2.png">
+                    <div class="arrow arrow2"></div> <!-- Arrow for pendel2 -->
+                </div>
+                <div class="pendel3">
+                    <img src="../images/pendel/pendel3.png">
+                    <div class="arrow arrow3"></div> <!-- Arrow for pendel3 -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="interface">
+            <div>
+                <h2>The interface</h2>
+                <p>The digital interface consists mainly of four pages, one acting as a screensaver. 
+                    This screensaver forecasts better and worse times to consume electricity for the next twelve hours. 
+                    The prediction is depicted in a format resembling a clock face, featuring a scale of dots in varying sizes. 
+                    Smaller dots represent favorable times for consumption, while larger dots denote less favorable times. 
+                    The remaining three pages of the interface present various information. An activity page displays an 
+                    overview of immediate household consumption, allowing users to deactivate activities that do not benefit 
+                    the entire household. A consumption history page shows data from the past 24 hours or weeks. Lastly, a 
+                    weekly summary page provides insights on previous consumption and tips for improving electricity usage.</p>
+            </div>
+            <div class="sidor"><img src="../images/pendel/sidor.png"></div>
+        </div>
+
+        <div class="result">
+            <h2>Prototyping</h2>
+            <p>During the project, a high-fidelity prototype was constructed for user evaluation to simulate the real-life 
+                experience of living with the product. Therefore, the prototype was functional and designed to closely 
+                resemble the final product in aesthetics.</p>
+        </div>
+        <div class="step_3">
+            <div class="pic1"><img src="../images/pendel/pic1.png"></div>
+            <div class="pic2"><img src="../images/pendel/pic2.png"></div>
+            <div class="pic3"><img src="../images/pendel/pic3.png"></div>
+        </div>
+
+        <div class="slutgiltig">
+            <div>
+                <h2>The result</h2>
+                <p>The project resulted in the concept called POWER. POWER is a household energy planning
+                    and management product designed for all household members. It primarily features a central interface
+                     comprising two components: a circular touch screen housing a digital interface and a metal bar with
+                      a wooden ring that moves vertically along the bar. The ring ascends when household electricity 
+                      consumption increases and sinks when it decreases.</p>
+            </div>
+        </div>
+        <div class="miljo">
+            <div class="ritning"><img src="../images/pendel/ritning.jpg"></div>
+            <div class="vagg"><img src="../images/pendel/miljo2.jpg"></div>
+        </div>
+            <div class="poster">
+                <div><h2>A poster</h2>
+                <p>An explanatory poster was designed to communicate the product and its features effectively. 
+                    To highlight the collaboration between the project team, BOID, and the broader initiative 
+                    led by the International Energy Agency, the colors of these companies were incorporated 
+                    into the design.</p></div>
+                <div class="post"><img src="../images/pendel/poster.png"></div>
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the pendulum images
+        var pendel2 = document.querySelector('.pendel2 img');
+        var pendel3 = document.querySelector('.pendel3 img');
+
+        // Select the arrows
+        var arrow2 = document.querySelector('.arrow.arrow2');
+        var arrow3 = document.querySelector('.arrow.arrow3');
+
+        // Add a class to the arrows just before the corresponding pendulum images are displayed
+        pendel2.addEventListener('animationstart', function () {
+            arrow2.style.display = 'block';
+        });
+
+        pendel3.addEventListener('animationstart', function () {
+            arrow3.style.display = 'block';
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      const navLinks = document.querySelector('nav ul');
+      const galleryItems = document.querySelectorAll('.gallery__item');
+  
+      // Add click event for hamburger menu
+      hamburgerMenu.addEventListener('click', function () {
+        hamburgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+  
+      // Add click event for gallery items
+      galleryItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          // Toggle a class to change the background color on tap/click
+          this.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+
+</html>

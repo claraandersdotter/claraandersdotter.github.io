@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="surf">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/booking_style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Bookable</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html#project">Projects</a></li>
+                    <li><a href="../index.html#about">About me</a></li>
+                    <li><a href="../index.html#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section>
+        <div class="info">
+            <div>
+                <h1>A booking system</h1>
+                <p><span>Type:</span> Individual work</p>
+                <p><span>When:</span> 2022</p>
+                <p><span>Duration:</span> Two weeks, half time</p>
+                <p><span>Project scope:</span> School project</p>
+                <p>The objective of this project was to develop an interface 
+                    for a booking system that included both rooms and equipment. A 
+                    Figma mockup was created to visually represent the layout and features 
+                    of the booking system. Both students and teachers provided feedback 
+                    on design decisions to guarantee alignment with their needs.</p>
+            </div>
+            <div class="booking"><img src="../images/booking/iMac.png"></div>
+        </div>
+
+        <div>
+            <div class="gif"><img id="animated-gif" src="../images/booking/gif1.gif" alt="GIF">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        var gif = document.getElementById('animated-gif');
+        var fps = 70; // Ange önskad framerate här
+
+        function changeSpeed() {
+            gif.style.animationDuration = 1 / fps + 's';
+        }
+
+        changeSpeed();
+
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      const navLinks = document.querySelector('nav ul');
+      const galleryItems = document.querySelectorAll('.gallery__item');
+  
+      // Add click event for hamburger menu
+      hamburgerMenu.addEventListener('click', function () {
+        hamburgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+  
+      // Add click event for gallery items
+      galleryItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          // Toggle a class to change the background color on tap/click
+          this.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+
+
+</html>
